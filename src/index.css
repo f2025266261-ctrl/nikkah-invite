@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-blush: #F4D9D6;
+  --color-deep-blush: #EBC4C1;
+  --color-cream: #FBF3EA;
+  --color-mauve: #B06B7E;
+  --color-plum: #7A4455;
+  --color-rose-gold: #C8998A;
+  --color-champagne: #E8CFC0;
+  --color-mulberry: #7A3F52;
+  --color-mulberry-deep: #5A2B3B;
+  --color-sage: #9AA58A;
+}
+
+/* Safe area support for notch and home bars */
+html, body {
+  background-color: var(--color-blush);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100svh;
+  overflow-x: hidden;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: var(--color-plum);
+}
+
+/* Paper grain texture using SVG noise pattern with gentle radial light */
+.paper-grain {
+  background-color: #F4EADB;
+  background-image: 
+    radial-gradient(ellipse at 50% 30%, rgba(255, 252, 245, 0.5) 0%, rgba(244, 234, 219, 0.3) 60%, transparent 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 180px 180px;
+}
+
+.paper-grain-ivory {
+  background-color: #F4EADB;
+  background-image: 
+    radial-gradient(ellipse at 50% 40%, rgba(255, 253, 248, 0.6) 0%, rgba(244, 234, 219, 0.3) 65%, transparent 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 180px 180px;
+}
+
+.paper-grain-crimson {
+  background-color: #6E1F34;
+  background-image: 
+    linear-gradient(180deg, #6E1F34 0%, #8A2640 50%, #6E1F34 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 180px 180px;
+}
+
+.paper-grain-cream {
+  background-color: #FBF3EA;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Viewport inset gold double border */
+.rose-gold-viewport-border,
+.gold-viewport-border {
+  border: 1px solid rgba(184, 147, 90, 0.45);
+  box-shadow: inset 0 0 0 2px transparent, inset 0 0 0 3px rgba(184, 147, 90, 0.3);
+}
+
+/* Thin gold double border for cards */
+.gold-double-border {
+  border: 1px solid rgba(184, 147, 90, 0.55);
+  box-shadow: inset 0 0 0 2px rgba(251, 243, 234, 0.8), inset 0 0 0 3px rgba(184, 147, 90, 0.35);
+}
+
+.rose-gold-double-border {
+  border: 1px solid rgba(184, 147, 90, 0.45);
+  box-shadow: inset 0 0 0 2px #FBF3EA, inset 0 0 0 3px rgba(184, 147, 90, 0.35);
+}
+
+/* Smooth Lenis custom CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Fluid responsive type utilities */
+.text-fluid-title {
+  font-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+  line-height: 1.1;
+}
+
+.text-fluid-names {
+  font-size: clamp(2.4rem, 6vw + 1.2rem, 4.75rem);
+  line-height: 1.15;
+}
+
+.text-fluid-body {
+  font-size: clamp(1rem, 1.2vw + 0.8rem, 1.25rem);
+  line-height: 1.6;
+}
+
+/* Rose-Gold and Mauve shimmer text effect */
+@keyframes roseGoldShimmerSweep {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.gold-shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #B8935A 0%,
+    #D9B877 25%,
+    #FFF4DC 50%,
+    #D9B877 75%,
+    #B8935A 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: roseGoldShimmerSweep 4s ease-in-out infinite;
+}
+
+.rose-gold-shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #B06B7E 0%,
+    #C8998A 25%,
+    #E8CFC0 50%,
+    #C8998A 75%,
+    #B06B7E 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: roseGoldShimmerSweep 4.5s ease-in-out infinite;
+}
+
+/* Royal Rose-Gold Foil Heading with one-time shimmer sweep */
+.royal-foil-heading {
+  background: linear-gradient(
+    135deg,
+    #66293B 0%,
+    #823D51 22%,
+    #BC7C6F 44%,
+    #FDF4EE 50%,
+    #BC7C6F 56%,
+    #823D51 78%,
+    #66293B 100%
+  );
+  background-size: 260% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: foilShimmerSweep 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes foilShimmerSweep {
+  0% {
+    background-position: 220% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+/* Progressive enhancement: Reveal items default to visible in CSS */
+[data-reveal] {
+  opacity: 1;
+}
+
+/* Gate Entry Button Animations */
+@keyframes goldShimmerSweep {
+  0% {
+    transform: translateX(-120%);
+  }
+  40%, 100% {
+    transform: translateX(220%);
+  }
+}
+
+@keyframes gateBtnBreathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+/* Reduced motion helpers */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

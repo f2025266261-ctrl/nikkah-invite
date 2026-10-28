@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <!-- Soft Watercolor Gradients for Rose Petals -->
+    <radialGradient id="roseHeart" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#7E182F" />
+      <stop offset="35%" stop-color="#9C2F4B" />
+      <stop offset="75%" stop-color="#B34460" />
+      <stop offset="100%" stop-color="#C98B98" />
+    </radialGradient>
+
+    <radialGradient id="petalGradOuter" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#EED9DE" />
+      <stop offset="40%" stop-color="#DFB2BC" />
+      <stop offset="75%" stop-color="#C98B98" />
+      <stop offset="100%" stop-color="#9C2F4B" />
+    </radialGradient>
+
+    <radialGradient id="petalGradMid" cx="45%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#DF9EA9" />
+      <stop offset="45%" stop-color="#C98B98" />
+      <stop offset="85%" stop-color="#9C2F4B" />
+      <stop offset="100%" stop-color="#7E182F" />
+    </radialGradient>
+
+    <!-- Sage Watercolor Leaves with Veins -->
+    <linearGradient id="sageLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2CCAC" />
+      <stop offset="40%" stop-color="#9AA87E" />
+      <stop offset="80%" stop-color="#7F8A63" />
+      <stop offset="100%" stop-color="#55603F" />
+    </linearGradient>
+
+    <!-- Pale Sage Bud Leaf -->
+    <linearGradient id="sageBudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8E0C5" />
+      <stop offset="60%" stop-color="#9AA87E" />
+      <stop offset="100%" stop-color="#6D7852" />
+    </linearGradient>
+
+    <!-- Warm Antique Gold Stem & Fill -->
+    <linearGradient id="antiqueGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6D3A7" />
+      <stop offset="50%" stop-color="#B8935A" />
+      <stop offset="100%" stop-color="#8A6A34" />
+    </linearGradient>
+
+    <!-- Soft Watercolor Vignette Filter -->
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- ==========================================
+       LAYER 1: SAGE LEAVES & BOTANICAL SPRIGS (Under roses)
+       ========================================== -->
+  <g id="foliage-background" opacity="0.95">
+    <!-- Leaf 1: Top-right large sage leaf -->
+    <path
+      d="M 120 75 C 160 50 205 70 215 105 C 190 120 150 115 120 75 Z"
+      fill="url(#sageLeafGrad)"
+      stroke="#55603F"
+      stroke-width="1.2"
+    />
+    <!-- Veins on Leaf 1 -->
+    <path d="M 120 75 Q 165 92 215 105" stroke="#465032" stroke-width="1" fill="none" opacity="0.75" />
+    <path d="M 148 84 Q 160 76 175 78" stroke="#465032" stroke-width="0.8" fill="none" opacity="0.65" />
+    <path d="M 168 93 Q 180 87 195 91" stroke="#465032" stroke-width="0.8" fill="none" opacity="0.65" />
+    <path d="M 152 87 Q 158 97 170 104" stroke="#465032" stroke-width="0.8" fill="none" opacity="0.65" />
+
+    <!-- Leaf 2: Bottom-left large sage leaf -->
+    <path
+      d="M 75 120 C 50 160 70 205 105 215 C 120 190 115 150 75 120 Z"
+      fill="url(#sageLeafGrad)"
+      stroke="#55603F"
+      stroke-width="1.2"
+    />
+    <!-- Veins on Leaf 2 -->
+    <path d="M 75 120 Q 92 165 105 215" stroke="#465032" stroke-width="1" fill="none" opacity="0.75" />
+    <path d="M 84 148 Q 76 160 78 175" stroke="#465032" stroke-width="0.8" fill="none" opacity="0.65" />
+    <path d="M 93 168 Q 87 180 91 195" stroke="#465032" stroke-width="0.8" fill="none" opacity="0.65" />
+    <path d="M 87 152 Q 97 158 104 170" stroke="#465032" stroke-width="0.8" fill="none" opacity="0.65" />
+
+    <!-- Leaf 3: Outer trailing sage leaf with soft curved tip -->
+    <path
+      d="M 175 125 C 220 120 250 148 245 175 C 215 178 190 155 175 125 Z"
+      fill="url(#sageLeafGrad)"
+      stroke="#55603F"
+      stroke-width="1.2"
+    />
+    <path d="M 175 125 Q 212 148 245 175" stroke="#465032" stroke-width="0.9" fill="none" opacity="0.75" />
+
+    <!-- Leaf 4: Bottom trailing sage leaf -->
+    <path
+      d="M 125 175 C 120 220 148 250 175 245 C 178 215 155 190 125 175 Z"
+      fill="url(#sageLeafGrad)"
+      stroke="#55603F"
+      stroke-width="1.2"
+    />
+    <path d="M 125 175 Q 148 212 175 245" stroke="#465032" stroke-width="0.9" fill="none" opacity="0.75" />
+
+    <!-- Leaf 5: Soft Corner accent leaf (top corner base) -->
+    <path
+      d="M 28 35 C 55 15 85 24 88 45 C 65 52 42 48 28 35 Z"
+      fill="url(#sageBudGrad)"
+      stroke="#6D7852"
+      stroke-width="1"
+    />
+    <path
+      d="M 35 28 C 15 55 24 85 45 88 C 52 65 48 42 35 28 Z"
+      fill="url(#sageBudGrad)"
+      stroke="#6D7852"
+      stroke-width="1"
+    />
+  </g>
+
+  <!-- ==========================================
+       LAYER 2: GOLD BOTANICAL STEMS & BABY'S-BREATH (Solid filled berry sprigs)
+       ========================================== -->
+  <g id="gold-botanicals">
+    <!-- Main delicate gold branching stem -->
+    <path
+      d="M 20 20 Q 90 40 160 115 Q 210 170 260 250"
+      stroke="url(#antiqueGold)"
+      stroke-width="2.2"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <path
+      d="M 20 20 Q 40 90 115 160 Q 170 210 250 260"
+      stroke="url(#antiqueGold)"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      fill="none"
+      opacity="0.85"
+    />
+
+    <!-- Secondary sprig branches -->
+    <path d="M 110 80 Q 150 65 190 55" stroke="url(#antiqueGold)" stroke-width="1.4" stroke-linecap="round" fill="none" />
+    <path d="M 80 110 Q 65 150 55 190" stroke="url(#antiqueGold)" stroke-width="1.4" stroke-linecap="round" fill="none" />
+    <path d="M 160 115 Q 215 100 250 85" stroke="url(#antiqueGold)" stroke-width="1.4" stroke-linecap="round" fill="none" />
+    <path d="M 115 160 Q 100 215 85 250" stroke="url(#antiqueGold)" stroke-width="1.4" stroke-linecap="round" fill="none" />
+
+    <!-- Solid Gold Baby's-Breath Berries & Buds -->
+    <circle cx="190" cy="55" r="4.5" fill="url(#antiqueGold)" />
+    <circle cx="204" cy="50" r="3.5" fill="#E6D3A7" />
+    <circle cx="216" cy="46" r="2.8" fill="url(#antiqueGold)" />
+
+    <circle cx="55" cy="190" r="4.5" fill="url(#antiqueGold)" />
+    <circle cx="50" cy="204" r="3.5" fill="#E6D3A7" />
+    <circle cx="46" cy="216" r="2.8" fill="url(#antiqueGold)" />
+
+    <circle cx="250" cy="85" r="4.2" fill="url(#antiqueGold)" />
+    <circle cx="262" cy="80" r="3.2" fill="#E6D3A7" />
+
+    <circle cx="85" cy="250" r="4.2" fill="url(#antiqueGold)" />
+    <circle cx="80" cy="262" r="3.2" fill="#E6D3A7" />
+
+    <circle cx="225" cy="190" r="4" fill="url(#antiqueGold)" />
+    <circle cx="190" cy="225" r="4" fill="url(#antiqueGold)" />
+    <circle cx="270" cy="265" r="3.5" fill="url(#antiqueGold)" />
+  </g>
+
+  <!-- ==========================================
+       LAYER 3: SECONDARY ROSE BUD (Top right)
+       ========================================== -->
+  <g id="rose-bud-1" transform="translate(195, 95) scale(0.72) rotate(25)">
+    <!-- Sepals -->
+    <path d="M 30 55 C 20 40 10 20 5 0 C 25 15 35 35 30 55 Z" fill="url(#sageLeafGrad)" />
+    <path d="M 45 55 C 55 40 65 20 70 0 C 50 15 40 35 45 55 Z" fill="url(#sageLeafGrad)" />
+    <!-- Bud Petals -->
+    <ellipse cx="37" cy="40" rx="22" ry="26" fill="url(#petalGradOuter)" />
+    <path d="M 22 45 C 20 28 32 18 42 20 C 50 22 55 35 48 48 C 38 52 26 50 22 45 Z" fill="url(#petalGradMid)" />
+    <path d="M 28 42 C 28 32 36 26 44 28 C 48 36 44 44 38 45 C 32 46 28 44 28 42 Z" fill="url(#roseHeart)" />
+  </g>
+
+  <!-- ==========================================
+       LAYER 4: SECONDARY ROSE BUD (Bottom left)
+       ========================================== -->
+  <g id="rose-bud-2" transform="translate(95, 195) scale(0.72) rotate(65)">
+    <!-- Sepals -->
+    <path d="M 30 55 C 20 40 10 20 5 0 C 25 15 35 35 30 55 Z" fill="url(#sageLeafGrad)" />
+    <path d="M 45 55 C 55 40 65 20 70 0 C 50 15 40 35 45 55 Z" fill="url(#sageLeafGrad)" />
+    <!-- Bud Petals -->
+    <ellipse cx="37" cy="40" rx="22" ry="26" fill="url(#petalGradOuter)" />
+    <path d="M 22 45 C 20 28 32 18 42 20 C 50 22 55 35 48 48 C 38 52 26 50 22 45 Z" fill="url(#petalGradMid)" />
+    <path d="M 28 42 C 28 32 36 26 44 28 C 48 36 44 44 38 45 C 32 46 28 44 28 42 Z" fill="url(#roseHeart)" />
+  </g>
+
+  <!-- ==========================================
+       LAYER 5: MAIN BLOOMING WATERCOLOR ROSE (Multi-layered whorls)
+       ========================================== -->
+  <g id="main-blooming-rose" transform="translate(68, 68)">
+    
+    <!-- Tier 1: Outermost broad watercolor petals (Dusty rose to rose crimson) -->
+    <path
+      d="M 65 8 C 98 6 128 25 132 58 C 105 55 82 28 65 8 Z"
+      fill="url(#petalGradOuter)"
+      opacity="0.9"
+    />
+    <path
+      d="M 132 58 C 136 92 118 122 88 126 C 90 98 116 75 132 58 Z"
+      fill="url(#petalGradOuter)"
+      opacity="0.9"
+    />
+    <path
+      d="M 88 126 C 54 130 24 112 18 78 C 46 80 72 108 88 126 Z"
+      fill="url(#petalGradOuter)"
+      opacity="0.9"
+    />
+    <path
+      d="M 18 78 C 14 44 32 15 65 8 C 62 38 34 60 18 78 Z"
+      fill="url(#petalGradOuter)"
+      opacity="0.9"
+    />
+
+    <!-- Tier 2: Flanking cup petals -->
+    <path
+      d="M 40 22 C 72 10 108 14 118 42 C 122 72 90 96 60 90 C 35 70 38 48 40 22 Z"
+      fill="url(#petalGradMid)"
+      opacity="0.92"
+    />
+    <path
+      d="M 98 38 C 114 62 108 92 84 104 C 62 108 42 94 48 74 C 62 52 82 42 98 38 Z"
+      fill="url(#petalGradMid)"
+      opacity="0.92"
+    />
+    <path
+      d="M 32 58 C 30 88 56 108 82 100 C 60 88 52 68 54 52 C 42 50 34 52 32 58 Z"
+      fill="url(#petalGradMid)"
+      opacity="0.95"
+    />
+
+    <!-- Tier 3: Inner cupped whorls (Rich Rose-Crimson) -->
+    <path
+      d="M 48 38 C 65 28 90 32 94 50 C 96 66 78 78 62 74 C 50 62 50 48 48 38 Z"
+      fill="url(#roseHeart)"
+    />
+    <path
+      d="M 58 42 C 72 36 86 40 88 52 C 90 62 78 70 68 68 C 58 60 58 50 58 42 Z"
+      fill="url(#petalGradOuter)"
+      opacity="0.8"
+    />
+    <path
+      d="M 64 46 C 75 42 84 46 85 54 C 86 60 78 65 72 64 C 65 58 64 52 64 46 Z"
+      fill="url(#roseHeart)"
+    />
+
+    <!-- Tier 4: Velvet Center Spiral / Core -->
+    <ellipse cx="73" cy="54" rx="10" ry="8" fill="#581020" />
+    <path
+      d="M 68 52 Q 74 48 78 54 Q 74 60 69 55"
+      stroke="#FFF2A3"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      fill="none"
+      opacity="0.9"
+    />
+    <circle cx="76" cy="52" r="1.5" fill="#FFE58F" />
+  </g>
+</svg>

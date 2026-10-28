@@ -1,0 +1,35 @@
+{
+  "name": "nikkahinvite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "check:assets": "node scripts/checkAssets.cjs",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^14.6.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.27",
+    "lucide-react": "^1.61.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.1",
+    "oxlint": "^1.88.0",
+    "playwright": "^1.64.1",
+    "postcss": "^8.5.31",
+    "tailwindcss": "^3.4.17",
+    "terser": "^5.51.2",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  }
+}

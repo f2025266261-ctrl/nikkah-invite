@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <defs>
+    <linearGradient id="goldArchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9C2F4B" />
+      <stop offset="25%" stop-color="#B8935A" />
+      <stop offset="50%" stop-color="#DFCA9B" />
+      <stop offset="75%" stop-color="#B8935A" />
+      <stop offset="100%" stop-color="#9C2F4B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Multifoil Mughal Cusped Arch -->
+  <!-- Outer Arch -->
+  <path d="M 10 118 L 10 65 Q 40 65 65 50 Q 100 55 125 35 Q 160 40 200 8 Q 240 40 275 35 Q 300 55 335 50 Q 360 65 390 65 L 390 118" 
+        stroke="url(#goldArchGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  
+  <!-- Inner Parallel Arch Line -->
+  <path d="M 20 118 L 20 72 Q 45 72 70 58 Q 105 63 130 44 Q 162 48 200 18 Q 238 48 270 44 Q 295 63 330 58 Q 355 72 380 72 L 380 118" 
+        stroke="#B8935A" stroke-width="1.2" fill="none" stroke-opacity="0.65" />
+
+  <!-- Keystone / Crest Medallion at Apex -->
+  <g transform="translate(200, 10)">
+    <circle cx="0" cy="0" r="5" fill="#9C2F4B" stroke="#B8935A" stroke-width="1.5" />
+    <circle cx="0" cy="-7" r="2.5" fill="#DFCA9B" />
+  </g>
+
+  <!-- Hanging Floral Drop from Arch Center -->
+  <path d="M 200 24 L 200 48" stroke="#B8935A" stroke-width="1.2" stroke-dasharray="2 2" />
+  <circle cx="200" cy="52" r="3" fill="#9C2F4B" />
+  <circle cx="200" cy="58" r="2" fill="#B8935A" />
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 240" fill="none">
+  <!-- Top hanging cord/chain -->
+  <line x1="50" y1="0" x2="50" y2="40" stroke="#B8935A" stroke-width="2.5" stroke-dasharray="2 2" />
+  
+  <!-- Hanging Loop -->
+  <circle cx="50" cy="45" r="7" stroke="#B8935A" stroke-width="2.5" fill="none" />
+  <circle cx="50" cy="45" r="3" fill="#B8935A" />
+  
+  <!-- Lantern Top Cap / Dome -->
+  <path d="M 32 60 Q 50 48 68 60 L 74 72 L 26 72 Z" fill="#B8935A" stroke="#8E6A36" stroke-width="1.5" />
+  <!-- Crescent finial on dome -->
+  <path d="M 50 49 C 48 53 52 56 50 58 C 53 56 53 51 50 49 Z" fill="#9C2F4B" />
+
+  <!-- Main Glass Body with Islamic Arches -->
+  <path d="M 26 72 L 20 150 L 32 175 L 68 175 L 80 150 L 74 72 Z" fill="rgba(244, 234, 219, 0.75)" stroke="#B8935A" stroke-width="2" />
+  
+  <!-- Internal warm candle glow -->
+  <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFF2A3" stop-opacity="0.9" />
+    <stop offset="40%" stop-color="#F6B84F" stop-opacity="0.6" />
+    <stop offset="75%" stop-color="#9C2F4B" stop-opacity="0.2" />
+    <stop offset="100%" stop-color="#B8935A" stop-opacity="0" />
+  </radialGradient>
+  <circle cx="50" cy="120" r="36" fill="url(#lanternGlow)" />
+  
+  <!-- Candle flame -->
+  <ellipse cx="50" cy="124" rx="4" ry="9" fill="#FFF8DC" />
+  <ellipse cx="50" cy="123" rx="2.5" ry="6" fill="#F87171" />
+
+  <!-- Decorative Moroccan lattice frets -->
+  <path d="M 50 72 L 50 175" stroke="#B8935A" stroke-width="1.5" opacity="0.8" />
+  <path d="M 36 72 L 34 165" stroke="#B8935A" stroke-width="1.2" opacity="0.6" />
+  <path d="M 64 72 L 66 165" stroke="#B8935A" stroke-width="1.2" opacity="0.6" />
+  
+  <path d="M 23 115 Q 50 100 77 115" stroke="#B8935A" stroke-width="1.5" fill="none" opacity="0.8" />
+  <path d="M 21 138 Q 50 125 79 138" stroke="#B8935A" stroke-width="1.5" fill="none" opacity="0.8" />
+
+  <!-- Bottom Tier & Trim -->
+  <path d="M 30 175 L 36 190 L 64 190 L 70 175 Z" fill="#B8935A" stroke="#8E6A36" stroke-width="1.5" />
+  
+  <!-- Hanging Pendant / Bead / Tassel -->
+  <line x1="50" y1="190" x2="50" y2="210" stroke="#B8935A" stroke-width="2" />
+  <circle cx="50" cy="214" r="5" fill="#9C2F4B" stroke="#B8935A" stroke-width="1" />
+  <polygon points="50,220 46,236 54,236" fill="#B8935A" />
+</svg>
